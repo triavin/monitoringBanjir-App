@@ -1,0 +1,7 @@
+{
+  "name": "monitoringBanjir-App",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
