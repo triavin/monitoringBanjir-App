@@ -4,6 +4,16 @@
 
 export const environment = {
   production: false
+  // ,
+  // firebaseConfig: {
+  //   apiKey: 'AIzaSyBhYXydheWyZZrOazYLJhD1dEOBeyydLiE',
+  //   authDomain: 'monitoring-banjir-iot-2023.firebaseapp.com',
+  //   projectId: 'monitoring-banjir-iot-2023',
+  //   storageBucket: 'monitoring-banjir-iot-2023.appspot.com',
+  //   messagingSenderId: '44654498525',
+  //   appId: '1:44654498525:web:4c9fbc9630cd6d4dfc0134',
+  //   measurementId: 'G-VCRKTZLCXV',
+  // },
 };
 
 /*
