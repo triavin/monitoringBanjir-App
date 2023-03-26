@@ -13,14 +13,6 @@ export class Tab2Page {
     private monitoringService: MonitoringService
   ) {}
 
-  // ionViewWillEnter() {
-  //   this.monitoringService.getDataHistory().subscribe(res => {
-  //     console.log(res);
-  //     this.dataHistory = res;
-  //     console.log(this.dataHistory)
-  //   });
-  // }
-
   intervalCall(){
     this.monitoringService.getDataHistory().subscribe(res => {
       console.log(res);
@@ -35,12 +27,4 @@ export class Tab2Page {
     }, 2000)
   }
 
-
-  // async presentToast(a){
-  //   const toast = await this.toasCtrl.create({
-  //     message: a,
-  //     duration: 1500
-  //   });
-  //   toast.present();
-  // }
 }
