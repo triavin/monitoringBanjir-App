@@ -13,12 +13,26 @@ export class Tab2Page {
     private monitoringService: MonitoringService
   ) {}
 
-  ionViewWillEnter() {
+  // ionViewWillEnter() {
+  //   this.monitoringService.getDataHistory().subscribe(res => {
+  //     console.log(res);
+  //     this.dataHistory = res;
+  //     console.log(this.dataHistory)
+  //   });
+  // }
+
+  intervalCall(){
     this.monitoringService.getDataHistory().subscribe(res => {
       console.log(res);
       this.dataHistory = res;
       console.log(this.dataHistory)
     });
+  }
+
+  ionViewDidEnter(){
+    setInterval(()=>{
+      this.intervalCall()
+    }, 2000)
   }
 
 

@@ -13,6 +13,6 @@ export class MonitoringService {
   }
 
   getDataStatus() {
-    return this.http.get(this.server + 'data_status.php');
+    return this.http.get(this.server + 'data_status.php/');
   }
 }
