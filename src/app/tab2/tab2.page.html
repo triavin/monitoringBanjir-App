@@ -12,15 +12,12 @@
   </ion-header>
 
   <div class="ion-text-center">
-    <!-- <h3>Data History Monitoring</h3> -->
-    <!-- <ion-button (click)="ionViewWillEnter()" expand="block" fill="clear" shape="round">
-      Click me
-    </ion-button> -->
+    <h3>Data History Monitoring</h3>
   </div>
 
   <ion-list>
     <ion-item *ngFor="let list of dataHistory.data">
-      <ion-label class="ion-text-wrap">ketinggian air : {{ list.ketinggian }} <br> time : {{ list.time }}</ion-label>
+      <ion-label class="ion-text-wrap">ketinggian air : {{ list.ketinggian }} cm <br> time : {{ list.time }}</ion-label>
     </ion-item>
   </ion-list>
   
