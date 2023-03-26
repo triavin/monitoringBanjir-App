@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Status
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,19 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">Status</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title class="ion-text-center">Status Air</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item *ngFor="let status of Status.data">
+        <ion-icon name="speedometer"></ion-icon>
+        <ion-label class="ion-text-wrap"> Ketinggian Air : {{ status.ketinggian }} Status : {{ status.status_air }}</ion-label>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

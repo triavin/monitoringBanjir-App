@@ -14,11 +14,18 @@ export class Tab1Page {
 
   Status:any = [];
 
-  ionViewWillEnter(){
-    this.monitoringService.getDataStatus().subscribe(res=>{
+  intervalCall(){
+    this.monitoringService.getDataStatus().subscribe(res => {
       console.log(res);
-      this.Status = res
-    })    
+      this.Status = res;
+      console.log(this.Status)
+    });
+  }
+
+  ionViewDidEnter(){
+    setInterval(()=>{
+      this.intervalCall()
+    }, 2000)
   }
 
 }
